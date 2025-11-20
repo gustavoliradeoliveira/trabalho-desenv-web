@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Teológico – 20 Perguntas</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="bg-dark text-white text-center p-4">
+    <h1>Quiz Teológico – 20 Perguntas</h1>
+  </header>
+
+  <main class="container my-4">
+    <section class="card p-4 shadow-lg">
+
+      <form id="quizForm">
+
+        <h3 class="text-center mb-4">Responda todas as perguntas:</h3>
+
+        <!-- ----------- PERGUNTAS TEXTO (5) ----------- -->
+
+        <div class="mb-3">
+          <label class="fw-bold">1. Quem confrontou os 450 profetas de Baal no Monte Carmelo?</label>
+          <input type="text" id="q1" class="form-control radius">
+        </div>
+
+        <div class="mb-3">
+          <label class="fw-bold">2. Em qual cidade os discípulos foram chamados “cristãos” pela primeira vez?</label>
+          <input type="text" id="q2" class="form-control radius">
+        </div>
+
+        <div class="mb-3">
+          <label class="fw-bold">3. Quem escreveu o livro de Atos dos Apóstolos?</label>
+          <input type="text" id="q3" class="form-control radius">
+        </div>
+
+        <div class="mb-3">
+          <label class="fw-bold">4. Qual apóstolo negou Jesus três vezes?</label>
+          <input type="text" id="q4" class="form-control radius">
+        </div>
+
+        <div class="mb-3">
+          <label class="fw-bold">5. Quem foi o primeiro rei de Israel?</label>
+          <input type="text" id="q5" class="form-control radius">
+        </div>
+
+
+
+        <!-- ----------- PERGUNTAS RADIO (5) ----------- -->
+
+        <div class="mb-3">
+          <label class="fw-bold">6. Qual profeta foi engolido por um grande peixe?</label>
+          <div class="form-check">
+            <input type="radio" name="q6" value="jonas" class="form-check-input radius">
+            <label class="form-check-label">Jonas</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" name="q6" value="jeremias" class="form-check-input">
+            <label class="form-check-label">Jeremias</label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="fw-bold">7. Quem substituiu Judas Iscariotes entre os apóstolos?</label>
+          <div class="form-check">
+            <input type="radio" name="q7" value="matias" class="form-check-input">
+            <label class="form-check-label">Matias</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" name="q7" value="paulo" class="form-check-input">
+            <label class="form-check-label">Paulo</label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="fw-bold">8. Onde Jesus nasceu?</label>
+          <div class="form-check">
+            <input type="radio" name="q8" value="belem" class="form-check-input">
+            <label class="form-check-label">Belém</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" name="q8" value="nazare" class="form-check-input">
+            <label class="form-check-label">Nazaré</label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="fw-bold">9. Qual é o último livro da Bíblia?</label>
+          <div class="form-check">
+            <input type="radio" name="q9" value="apocalipse" class="form-check-input">
+            <label class="form-check-label">Apocalipse</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" name="q9" value="joao" class="form-check-input">
+            <label class="form-check-label">3 João</label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="fw-bold">10. Quem foi lançado na cova dos leões?</label>
+          <div class="form-check">
+            <input type="radio" name="q10" value="daniel" class="form-check-input">
+            <label class="form-check-label">Daniel</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" name="q10" value="moises" class="form-check-input">
+            <label class="form-check-label">Moisés</label>
+          </div>
+        </div>
+
+
+
+        <!-- ----------- PERGUNTAS CHECKBOX (5) ----------- -->
+
+        <div class="mb-3">
+          <label class="fw-bold">11. Quais desses são livros proféticos?</label>
+          <div class="form-check">
+            <input type="checkbox" id="q11a" value="isaias" class="form-check-input radius">
+            <label class="form-check-label">Isaías</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="q11b" value="josue" class="form-check-input">
+            <label class="form-check-label">Josué</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="q11c" value="ezequiel" class="form-check-input">
+            <label class="form-check-label">Ezequiel</label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="fw-bold">12. Quais desses foram apóstolos?</label>
+          <div class="form-check">
+            <input type="checkbox" id="q12a" value="pedro" class="form-check-input radius">
+            <label class="form-check-label">Pedro</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="q12b" value="davi" class="form-check-input">
+            <label class="form-check-label">Davi</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="q12c" value="joao" class="form-check-input">
+            <label class="form-check-label">João</label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="fw-bold">13. Quais desses livros estão no Novo Testamento?</label>
+          <div class="form-check">
+            <input type="checkbox" id="q13a" value="romanos" class="form-check-input">
+            <label class="form-check-label">Romanos</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="q13b" value="genesis" class="form-check-input">
+            <label class="form-check-label">Gênesis</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="q13c" value="apocalipse" class="form-check-input">
+            <label class="form-check-label">Apocalipse</label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="fw-bold">14. Quais desses são frutos do Espírito?</label>
+          <div class="form-check">
+            <input type="checkbox" id="q14a" value="amor" class="form-check-input">
+            <label class="form-check-label">Amor</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="q14b" value="ira" class="form-check-input">
+            <label class="form-check-label">Ira</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="q14c" value="mansidao" class="form-check-input">
+            <label class="form-check-label">Mansidão</label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="fw-bold">15. Quais desses reis foram de Israel (não Judá)?</label>
+          <div class="form-check">
+            <input type="checkbox" id="q15a" value="jeroboao" class="form-check-input">
+            <label class="form-check-label">Jeroboão</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="q15b" value="josafá" class="form-check-input">
+            <label class="form-check-label">Josafá</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="q15c" value="acabe" class="form-check-input">
+            <label class="form-check-label">Acabe</label>
+          </div>
+        </div>
+
+
+
+        <!-- ----------- PERGUNTAS SELECT (5) ----------- -->
+
+        <div class="mb-3">
+          <label class="fw-bold">16. Qual destes é um livro poético?</label>
+          <select id="q16" class="form-select radius">
+            <option value="">Selecione...</option>
+            <option value="salmos">Salmos</option>
+            <option value="atos">Atos</option>
+            <option value="josue">Josué</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label class="fw-bold">17. Quem escreveu a carta aos Romanos?</label>
+          <select id="q17" class="form-select radius">
+            <option value="">Selecione...</option>
+            <option value="paulo">Paulo</option>
+            <option value="pedro">Pedro</option>
+            <option value="joao">João</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label class="fw-bold">18. A quem Deus pediu que sacrificasse seu filho?</label>
+          <select id="q18" class="form-select radius">
+            <option value="">Selecione...</option>
+            <option value="abraa">Abraão</option>
+            <option value="jacob">Jacó</option>
+            <option value="davi">Davi</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label class="fw-bold">19. Qual destes era profeta menor?</label>
+          <select id="q19" class="form-select radius">
+            <option value="">Selecione...</option>
+            <option value="miqueias">Miqueias</option>
+            <option value="daniel">Daniel</option>
+            <option value="ezequiel">Ezequiel</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label class="fw-bold">20. Quem libertou o povo do Egito?</label>
+          <select id="q20" class="form-select radius">
+            <option value="">Selecione...</option>
+            <option value="moises">Moisés</option>
+            <option value="aaron">Arão</option>
+            <option value="josue">Josué</option>
+          </select>
+        </div>
+
+        <button class="btn btn-success w-100 mt-3 radius">Finalizar Quiz</button>
+
+      </form>
+    </section>
+
+    <section id="resultado" class="mt-4"></section>
+
+  </main>
+
+  <footer class="text-center p-3 bg-light">
+    <small>Atividade – Desenvolvimento Web</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
