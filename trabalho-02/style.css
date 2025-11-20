@@ -1,0 +1,11 @@
+.radius {
+  border-radius: 10px;
+}
+
+.card {
+  border-radius: 15px;
+}
+
+form label {
+  margin-bottom: 5px;
+}
